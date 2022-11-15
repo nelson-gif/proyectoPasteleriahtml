@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenar</title>
+</head>
+<body>
+    <header>
+        <h1>Pasteleria Online</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="ordenar.html">Ordenar</a></li>
+            <li><a href="contacto.html">Contactanos</a></li>
+            <li><a href="recibido.html">Ordenes recibidas</a></li>
+        </ul>
+    </nav>
+    <section>
+        <h2>Ordenar Aqui</h2>
+        <form action="">
+            <div id="Datos">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" name="nombre" id="nombre" placeholder="nombre" required="true"><br>
+                
+                <label for="telefono">Telefono: </label><br>
+                <input type="number" name="telefono" id="telefono" placeholder="numero" required="true"><br>
+                
+                <label for="correo">Correo Electronico:</label><br>
+                <input type="email" name="correo" id="correo" placeholder="email@email.com" required="true"><br>
+            </div>
+
+            <div id="sabores">
+                <p>Selecciona el sabor o los sabores:</p>
+                <input type="checkbox" name="sabor" id="fresa" value="fresa">
+                <label for="fresa">Fresa</label><br>
+                
+                <input type="checkbox" name="sabor" id="chocolate" value="chocolate">
+                <label for="chocolate">Chocolate</label><br>
+                
+                <input type="checkbox" name="sabor" id="melocoton" value="melocoton">
+                <label for="melocoton">Melocoton</label><br>
+                
+                <input type="checkbox" name="sabor" id="tres-leches" value="tres-leches">
+                <label for="tres-leches">Tres Leches</label><br>
+                
+                <input type="checkbox" name="sabor" id="vainilla" value="Vainilla">
+                <label for="vainilla">Vainilla</label><br>
+            </div>
+
+            <div id="decoracion">
+                <p>Agrega una decoracion</p>
+                <input type="checkbox" name="decoracion" id="velas" value="velas">
+                <label for="velas">Velas de dulce Q15.00</label><br>
+                
+                <input type="checkbox" name="decoracion" id="globos" value="globos">
+                <label for="globos">Globos Q25.00</label><br>
+                
+                <input type="checkbox" name="decoracion" id="mensaje" value="mensaje">
+                <label for="mensaje">Mensaje personalizado Q50.00</label><br>
+                
+                <input type="checkbox" name="decoracion" id="dibujo" value="dibujo">
+                <label for="dibujo">Dibujo Personalizado Q100.00</label><br>
+                
+                <input type="checkbox" name="decoracion" id="regalo" value="regalo">
+                <label for="regalo">Regalo Personalizado Q35.00</label><br>
+
+                <input type="checkbox" name="decoracion" id="none" value="none">
+                <label for="none">Ninguno Q0.00</label>
+            </div>
+
+            <div id="tamano">
+                <p>Elige el Tamaño</p>
+                <select name="selecion" id="seleccion">
+                    <option value="none"></option>
+                    <option value="grande">Grande Q120.00</option>
+                    <option value="mediano">Mediano Q85.00</option>
+                    <option value="pequeno">Pequeño Q60.00</option>
+                </select>
+            </div>
+
+            <div>
+                <p>Mensaje para el chef</p>
+                <textarea name="message" id="message" cols="40" rows="5"></textarea>
+            </div>
+
+            <div id="enviar">
+                <br>
+                <button type="submit">Ordenar</button>
+                <button type="reset">Limpiar</button>
+            </div>
+
+        </form>
+    </section>
+</body>
+</html>
